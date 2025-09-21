@@ -215,7 +215,7 @@
               <img
                 class="team-img"
                 src="./images/img-1.jpg"
-                alt="foto Mark Guerrero"
+                alt="photo Mark Guerrero"
                 width="264"
                 height="260">
               <!-- Українською: Зображення / English: Image -->
@@ -283,7 +283,7 @@
               <img
                 class="team-img"
                 src="./images/img-2.jpg"
-                alt="foto Tom Ford"
+                alt="photo Tom Ford"
                 width="264"
                 height="260">
               <!-- Українською: Зображення / English: Image -->
@@ -351,7 +351,7 @@
               <img
                 class="team-img"
                 src="./images/img-3.jpg"
-                alt="foto Camila Garcia"
+                alt="photo Camila Garcia"
                 width="264"
                 height="260">
               <!-- Українською: Зображення / English: Image -->
@@ -419,7 +419,7 @@
               <img
                 class="team-img"
                 src="./images/img-4.jpg"
-                alt="foto Daniel Wilson"
+                alt="photo Daniel Wilson"
                 width="264"
                 height="260">
               <!-- Українською: Зображення / English: Image -->
@@ -739,8 +739,134 @@
             </li>
           </ul>
         </div>
+        <!-- !!!e-mail input!!! -->
+        <div class="email-input">
+          <!-- Українською: Універсальний контейнер / English: Universal container -->
+          <form name="email-input">
+            <p class="email-input-subscribe">
+              <!-- Українською: Абзац / English: Paragraph -->
+              Subscribe
+            </p>
+            <div class="input-wrapper">
+              <label class="email-input-form-label" for="email-id">
+                <!-- Українською: Мітка для поля вводу / English: Input label -->
+                <input
+                  class="email-input-form-input"
+                  type="email"
+                  id="email-id"
+                  name="email"
+                  placeholder="E-mail">
+                <!-- Українською: Поле вводу / English: Input field -->
+              </label>
+              <button class="email-input-btn" type="submit">
+                <!-- Українською: Кнопка / English: Button -->
+                Subscribe<svg class="email-input-icon" width="24" height="20">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
       <!-- Українською: Універсальний контейнер / English: Universal container -->
     </footer>
+    <!-- !!!BACKDROP!!! -->
+    <div class="backdrop is-open">
+      <!-- Українською: Фоновий елемент модального вікна / English: Modal window background element -->
+      <div class="backdrop-modal">
+        <!-- Українською: Модальне вікно / English: Modal window -->
+        <button type="button" class="backdrop-modal-close-button">
+          <!-- Українською: Кнопка закриття модального вікна / English: Modal window close button -->
+          <svg class="backdrop-modal-svg-close-button" width="8" height="8">
+            <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <p class="backdrop-modal-title">Leave your contacts and we will call you back</p>
+        <!-- Українською: Заголовок модального вікна / English: Modal window title -->
+        <form class="backdrop-modal-form">
+          <!-- Українською: Форма модального вікна / English: Modal window form -->
+          <div class="backdrop-modal-field">
+            <!-- Українською: Поле форми / English: Form field -->
+            <label for="user-name" class="backdrop-modal-label-input">Name</label>
+            <!-- Українською: Мітка для поля вводу / English: Input field label -->
+            <div class="backdrop-input-wrapper">
+              <!-- Українською: Універсальний контейнер / English: Universal container -->
+              <input type="text" class="backdrop-modal-input" name="user-name" id="user-name">
+              <!-- Українською: Поле вводу / English: Input field -->
+              <svg class="backdrop-input-icon" width="18" height="24">
+                <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                <use href="./images/icons.svg#icon-user-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-modal-field">
+            <!-- Українською: Поле форми / English: Form field -->
+            <label for="user-phone" class="backdrop-modal-label-input">Phone</label>
+            <!-- Українською: Мітка для поля вводу / English: Input field label -->
+            <div class="backdrop-input-wrapper">
+              <!-- Українською: Універсальний контейнер / English: Universal container -->
+              <input type="tel" class="backdrop-modal-input" name="user-phone" id="user-phone">
+              <!-- Українською: Поле вводу / English: Input field -->
+              <svg class="backdrop-input-icon" width="18" height="24">
+                <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                <use href="./images/icons.svg#icon-user-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-modal-field">
+            <!-- Українською: Поле форми / English: Form field -->
+            <label for="user-email" class="backdrop-modal-label-input">Email</label>
+            <!-- Українською: Мітка для поля вводу / English: Input field label -->
+            <div class="backdrop-input-wrapper">
+              <!-- Українською: Універсальний контейнер / English: Universal container -->
+              <input type="email" class="backdrop-modal-input" id="user-email" name="user-email">
+              <!-- Українською: Поле вводу / English: Input field -->
+              <svg class="backdrop-input-icon" width="18" height="24">
+                <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                <use href="./images/icons.svg#icon-user-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-modal-field backdrop-modal-field-comment">
+            <!-- Українською: Поле форми для коментаря / English: Form field for comment -->
+            <label for="user-comment" class="backdrop-modal-label-input">Comment</label>
+            <!-- Українською: Мітка для поля вводу / English: Input field label -->
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="backdrop-modal-text-area"
+              placeholder="Text input"></textarea>
+            <!-- Українською: Текстова область / English: Text area -->
+          </div>
+          <div class="backdrop-modal-field backdrop-modal-field-checkbox">
+            <!-- Українською: Поле форми з чекбоксом / English: Form field with checkbox -->
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="backdrop-modal-check visually-hidden">
+            <!-- Українською: Чекбокс / English: Checkbox -->
+            <label for="user-privacy" class="backdrop-modal-check-label">
+              <!-- Українською: Мітка для чекбоксу / English: Checkbox label -->
+              <span class="backdrop-modal-check-box">
+                <!-- Українською: Універсальний контейнер / English: Universal container -->
+                <svg class="backdrop-check-icon" height="8" width="10">
+                  <!-- Українською: Використання іконки з спрайту / English: Using icon from sprite -->
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href class="backdrop-modal-policy-link">Privacy Policy</a>
+              <!-- Українською: Посилання на політику конфіденційності / English: Privacy policy link -->
+            </label>
+          </div>
+          <button type="submit" class="backdrop-modal-send-button">Send</button>
+          <!-- Українською: Кнопка відправки форми / English: Form submit button -->
+        </form>
+      </div>
+    </div>
   </body>
 </html>

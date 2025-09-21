@@ -204,6 +204,13 @@ img {
   object-fit: cover;
 }
 
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
 /* !!! Стилі для header !!! */
 .header {
   /* Нижня рамка header */
@@ -908,6 +915,10 @@ img {
   align-items: baseline;
 }
 
+.footer-social {
+  margin-right: 80px;
+}
+
 .footer-social-text {
   /* Товщина шрифту тексту соціальних мереж footer */
   font-weight: 500;
@@ -977,4 +988,658 @@ img {
 .footer-social-link:active {
   /* Фоновий колір посилання соціальної іконки footer при наведенні */
   background-color: var(--green);
+}
+
+/* !!! Стилі для підписки на розсилку !!! */
+.email-input-subscribe {
+  /* Основний шрифт проекту */
+  font-family: var(--primary-family);
+
+  /* Розмір шрифту тексту підписки */
+  font-size: 16px;
+
+  /* Товщина шрифту тексту підписки */
+  font-weight: 500;
+
+  /* Міжрядковий інтервал тексту підписки */
+  line-height: 1.5;
+
+  /* Відстань між літерами тексту підписки */
+  letter-spacing: 0.02em;
+
+  /* Колір тексту підписки */
+  color: var(--white);
+
+  /* Нижній відступ тексту підписки */
+  margin-bottom: 16px;
+}
+
+.email-input-form-input {
+  /* Основний шрифт проекту */
+  font-family: var(--primary-family);
+
+  /* Розмір шрифту поля вводу */
+  font-size: 12px;
+
+  /* Звичайна товщина шрифту поля вводу */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал поля вводу */
+  line-height: 2;
+
+  /* Відстань між літерами поля вводу */
+  letter-spacing: 0.04em;
+
+  /* Колір тексту поля вводу */
+  color: var(--white);
+
+  /* Прозорий фон поля вводу */
+  background: transparent;
+
+  /* Внутрішні відступи поля вводу */
+  padding: 8px 16px;
+
+  /* Рамка поля вводу */
+  border: 1px solid var(--white);
+
+  /* Заокруглення кутів поля вводу */
+  border-radius: 4px;
+
+  /* Тінь поля вводу */
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+
+  /* Прибираємо outline */
+  outline: transparent;
+}
+
+.email-input-form-input::placeholder {
+  /* Основний шрифт проекту */
+  font-family: var(--primary-family);
+
+  /* Розмір шрифту placeholder */
+  font-size: 12px;
+
+  /* Звичайна товщина шрифту placeholder */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал placeholder */
+  line-height: 2;
+
+  /* Відстань між літерами placeholder */
+  letter-spacing: 0.04em;
+
+  /* Колір тексту placeholder */
+  color: var(--white);
+}
+
+.email-input-btn {
+  /* Розмір шрифту кнопки підписки */
+  font-size: 16px;
+
+  /* Товщина шрифту кнопки підписки */
+  font-weight: 500;
+
+  /* Міжрядковий інтервал кнопки підписки */
+  line-height: 1.5;
+
+  /* Відстань між літерами кнопки підписки */
+  letter-spacing: 0.04em;
+
+  /* Центрування тексту кнопки підписки */
+  text-align: center;
+
+  /* Колір тексту кнопки підписки */
+  color: var(--white);
+
+  /* Фоновий колір кнопки підписки */
+  background: var(--iris);
+
+  /* Розміщуємо іконку в центрі кнопки */
+  display: flex;
+
+  /* Центруємо іконку по горизонталі */
+  justify-content: center;
+
+  /* Центруємо іконку по вертикалі */
+  align-items: center;
+
+  /* Мінімальна ширина кнопки підписки */
+  min-width: 165px;
+
+  /* Внутрішні відступи кнопки підписки */
+  padding: 8px 24px;
+
+  /* Прибираємо рамку кнопки */
+  border: none;
+
+  /* Заокруглення кутів кнопки підписки */
+  border-radius: 4px;
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+
+  /* Плавний перехід фонового кольору */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-input-btn:hover,
+.email-input-btn:focus {
+  /* Колір тексту кнопки при наведенні */
+  color: var(--white);
+
+  /* Фоновий колір кнопки при наведенні */
+  background-color: var(--ocean);
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+}
+
+.email-input-icon {
+  /* Колір заливки іконки підписки */
+  fill: var(--white);
+
+  /* Лівий відступ іконки підписки */
+  margin-left: 16px;
+}
+
+.input-wrapper {
+  /* Розміщуємо елементи в рядок */
+  display: flex;
+
+  /* Центруємо елементи по горизонталі */
+  justify-content: center;
+
+  /* Центруємо елементи по вертикалі */
+  align-items: center;
+
+  /* Проміжок між елементами */
+  gap: 24px;
+}
+
+/* !!! Стилі для модального вікна !!! */
+.backdrop {
+  /* Фоновий колір backdrop з прозорістю */
+  background-color: var(--navy-blue-modal);
+
+  /* Фіксоване позиціонування backdrop */
+  position: fixed;
+
+  /* Позиція зверху */
+  top: 0;
+
+  /* Позиція зліва */
+  left: 0;
+
+  /* Вищий z-index для поверх інших елементів */
+  z-index: 100;
+
+  /* Початково прихований */
+  visibility: hidden;
+
+  /* Початково прозорий */
+  opacity: 0;
+
+  /* Повна ширина viewport */
+  width: 100vw;
+
+  /* Повна висота viewport */
+  height: 100vh;
+
+  /* Забороняємо взаємодію з елементами під backdrop */
+  pointer-events: none;
+
+  /* Плавний перехід прозорості та видимості */
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal {
+  /* Фоновий колір модального вікна */
+  background-color: var(--white);
+
+  /* Абсолютне позиціонування модального вікна */
+  position: absolute;
+
+  /* Центрування по вертикалі */
+  top: 50%;
+
+  /* Центрування по горизонталі */
+  left: 50%;
+
+  /* Мінімальна ширина модального вікна */
+  min-width: 408px;
+
+  /* Мінімальна висота модального вікна */
+  min-height: 584px;
+
+  /* Внутрішні відступи модального вікна */
+  padding: 72px 24px 24px;
+
+  /* Заокруглення кутів модального вікна */
+  border-radius: 4px;
+
+  /* Тінь модального вікна */
+  box-shadow:
+    0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%),
+    0 2px 1px 0 rgb(0 0 0 / 20%);
+
+  /* Центрування модального вікна */
+  transform: translate(-50%, -50%);
+
+  /* Плавний перехід трансформації */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-close-button {
+  /* Фоновий колір кнопки закриття */
+  background-color: var(--cornflower);
+
+  /* Абсолютне позиціонування кнопки закриття */
+  position: absolute;
+
+  /* Позиція зверху */
+  top: 24px;
+
+  /* Позиція справа */
+  right: 24px;
+
+  /* Розміщуємо іконку в центрі кнопки */
+  display: flex;
+
+  /* Центруємо іконку по горизонталі */
+  justify-content: center;
+
+  /* Центруємо іконку по вертикалі */
+  align-items: center;
+
+  /* Ширина кнопки закриття */
+  width: 24px;
+
+  /* Висота кнопки закриття */
+  height: 24px;
+
+  /* Обнуляємо внутрішні відступи */
+  padding: 0;
+
+  /* Рамка кнопки закриття */
+  border: 1px solid rgb(0 0 0 / 10%);
+
+  /* Кругла форма кнопки закриття */
+  border-radius: 50%;
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+
+  /* Плавний перехід фонового кольору та рамки */
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-close-button:focus,
+.backdrop-modal-close-button:hover {
+  /* Колір заливки іконки при наведенні */
+  fill: var(--white);
+
+  /* Фоновий колір кнопки при наведенні */
+  background-color: var(--ocean);
+
+  /* Прибираємо рамку при наведенні */
+  border: none;
+}
+
+.backdrop-modal-svg-close-button {
+  /* Плавний перехід кольору заливки іконки */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-title {
+  /* Товщина шрифту заголовку модального вікна */
+  font-weight: 500;
+
+  /* Міжрядковий інтервал заголовку модального вікна */
+  line-height: 1.5;
+
+  /* Центрування заголовку модального вікна */
+  text-align: center;
+
+  /* Колір заголовку модального вікна */
+  color: var(--navy-blue);
+
+  /* Нижній відступ заголовку модального вікна */
+  margin-bottom: 16px;
+}
+
+.backdrop-modal-input {
+  /* Середній розмір шрифту поля вводу */
+  font-size: medium;
+
+  /* Колір тексту поля вводу */
+  color: var(--navy-blue);
+
+  /* Прозорий фон поля вводу */
+  background-color: transparent;
+
+  /* Повна ширина поля вводу */
+  width: 100%;
+
+  /* Висота поля вводу */
+  height: 40px;
+
+  /* Правий внутрішній відступ поля вводу */
+  padding-right: 16px;
+
+  /* Лівий внутрішній відступ поля вводу */
+  padding-left: 38px;
+
+  /* Рамка поля вводу */
+  border: 1px solid var(--grey);
+
+  /* Заокруглення кутів поля вводу */
+  border-radius: 4px;
+
+  /* Прибираємо outline */
+  outline: transparent;
+
+  /* Плавний перехід кольору рамки */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-input:hover,
+.backdrop-modal-input:focus {
+  /* Колір рамки при наведенні */
+  border: 1px solid var(--iris);
+}
+
+.backdrop-modal-input:required {
+  /* Колір рамки для обов'язкових полів */
+  border: 1px solid tomato;
+}
+
+.backdrop-input-icon {
+  /* Абсолютне позиціонування іконки */
+  position: absolute;
+
+  /* Центрування по вертикалі */
+  top: 50%;
+
+  /* Позиція зліва */
+  left: 16px;
+
+  /* Висота іконки */
+  height: 24px;
+
+  /* Колір обводки іконки */
+  stroke: var(--navy-blue);
+
+  /* Центрування іконки */
+  transform: translateY(-50%);
+
+  /* Плавний перехід кольору заливки */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-label-input {
+  /* Розмір шрифту мітки поля вводу */
+  font-size: 12px;
+
+  /* Звичайна товщина шрифту мітки поля вводу */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал мітки поля вводу */
+  line-height: 1.17;
+
+  /* Відстань між літерами мітки поля вводу */
+  letter-spacing: 0.04em;
+
+  /* Вирівнювання тексту мітки поля вводу */
+  text-align: left;
+
+  /* Колір мітки поля вводу */
+  color: var(--light-slate);
+
+  /* Блочне відображення мітки */
+  display: block;
+
+  /* Напрямок flex-контейнера */
+  flex-direction: column;
+
+  /* Проміжок між елементами */
+  gap: 4px;
+
+  /* Нижній відступ мітки поля вводу */
+  margin-bottom: 4px;
+}
+
+.backdrop-input-wrapper {
+  /* Відносне позиціонування для іконки */
+  position: relative;
+}
+
+.backdrop-modal-field {
+  /* Нижній відступ поля */
+  margin-bottom: 8px;
+}
+
+.backdrop-modal-input:focus + .backdrop-input-icon {
+  /* Колір заливки іконки при фокусі */
+  fill: var(--iris);
+}
+
+.backdrop-modal-field-comment {
+  /* Нижній відступ поля коментаря */
+  margin-bottom: 16px;
+}
+
+.backdrop-modal-text-area {
+  /* Розмір шрифту текстової області */
+  font-size: 12px;
+
+  /* Міжрядковий інтервал текстової області */
+  line-height: 1.17;
+
+  /* Відстань між літерами текстової області */
+  letter-spacing: 0.04em;
+
+  /* Колір тексту текстової області */
+  color: var(--grey);
+
+  /* Прозорий фон текстової області */
+  background-color: transparent;
+
+  /* Повна ширина текстової області */
+  width: 100%;
+
+  /* Висота текстової області */
+  height: 120px;
+
+  /* Внутрішні відступи текстової області */
+  padding: 8px 16px;
+
+  /* Рамка текстової області */
+  border: 1px solid var(--grey);
+
+  /* Заокруглення кутів текстової області */
+  border-radius: 4px;
+
+  /* Прибираємо outline */
+  outline: transparent;
+
+  /* Забороняємо зміну розміру */
+  resize: none;
+
+  /* Плавний перехід кольору рамки */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-text-area:hover,
+.backdrop-modal-text-area:focus {
+  /* Колір рамки при наведенні */
+  border: 1px solid var(--iris);
+}
+
+.backdrop-modal-check-label {
+  /* Розмір шрифту мітки чекбокса */
+  font-size: 12px;
+
+  /* Звичайна товщина шрифту мітки чекбокса */
+  font-weight: 400;
+
+  /* Міжрядковий інтервал мітки чекбокса */
+  line-height: 1.17;
+
+  /* Відстань між літерами мітки чекбокса */
+  letter-spacing: 0.04em;
+
+  /* Центрування мітки чекбокса */
+  text-align: center;
+
+  /* Колір мітки чекбокса */
+  color: var(--light-slate);
+
+  /* Проміжок між елементами */
+  gap: 8px;
+}
+
+.backdrop-modal-field-checkbox {
+  /* Нижній відступ поля чекбокса */
+  margin-bottom: 24px;
+}
+
+.backdrop-modal-policy-link {
+  /* Підкреслення посилання політики */
+  text-decoration: underline;
+
+  /* Забороняємо пропуск підкреслення */
+  text-decoration-skip-ink: none;
+
+  /* Колір посилання політики */
+  color: var(--iris);
+}
+
+.backdrop-modal-check-box {
+  /* Розміщуємо іконку в центрі чекбокса */
+  display: inline-flex;
+
+  /* Центруємо іконку по горизонталі */
+  justify-content: center;
+
+  /* Центруємо іконку по вертикалі */
+  align-items: center;
+
+  /* Ширина чекбокса */
+  width: 16px;
+
+  /* Висота чекбокса */
+  height: 16px;
+
+  /* Рамка чекбокса */
+  border: 1px solid var(--grey);
+
+  /* Заокруглення кутів чекбокса */
+  border-radius: 2px;
+
+  /* Плавний перехід фонового кольору, рамки та заливки */
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Прозора заливка чекбокса */
+  fill: transparent;
+}
+
+.backdrop-check-icon {
+  /* Колір заливки іконки чекбокса */
+  fill: var(--white);
+}
+
+.backdrop-modal-check:checked + .backdrop-modal-check-label > .backdrop-modal-check-box {
+  /* Фоновий колір чекбокса при виборі */
+  background-color: var(--ocean);
+
+  /* Прибираємо рамку при виборі */
+  border: none;
+
+  /* Колір заливки іконки при виборі */
+  fill: var(--cloud);
+}
+
+.backdrop-modal-send-button {
+  /* Розмір шрифту кнопки відправки */
+  font-size: 16px;
+
+  /* Товщина шрифту кнопки відправки */
+  font-weight: 500;
+
+  /* Міжрядковий інтервал кнопки відправки */
+  line-height: 1.5;
+
+  /* Відстань між літерами кнопки відправки */
+  letter-spacing: 0.04em;
+
+  /* Центрування тексту кнопки відправки */
+  text-align: center;
+
+  /* Колір тексту кнопки відправки */
+  color: var(--white);
+
+  /* Фоновий колір кнопки відправки */
+  background-color: var(--iris);
+
+  /* Блочне відображення кнопки відправки */
+  display: block;
+
+  /* Мінімальна ширина кнопки відправки */
+  min-width: 169px;
+
+  /* Висота кнопки відправки */
+  height: 56px;
+
+  /* Центрування кнопки відправки */
+  margin-right: auto;
+  margin-left: auto;
+
+  /* Внутрішні відступи кнопки відправки */
+  padding: 16px 32px;
+
+  /* Прибираємо рамку кнопки */
+  border: none;
+
+  /* Заокруглення кутів кнопки відправки */
+  border-radius: 4px;
+
+  /* Тінь кнопки відправки */
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+
+  /* Плавний перехід фонового кольору */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-send-button:hover,
+.backdrop-modal-send-button:focus {
+  /* Колір тексту кнопки при наведенні */
+  color: var(--white);
+
+  /* Фоновий колір кнопки при наведенні */
+  background-color: var(--ocean);
+
+  /* Курсор при наведенні на кнопку */
+  cursor: pointer;
+}
+
+.is-open {
+  /* Показуємо модальне вікно */
+  visibility: visible;
+
+  /* Робимо модальне вікно видимим */
+  opacity: 1;
+
+  /* Дозволяємо взаємодію з елементами */
+  pointer-events: auto;
 }
