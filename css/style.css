@@ -1196,7 +1196,7 @@ button {
 
 .backdrop-modal {
   /* Фоновий колір модального вікна */
-  background-color: var(--white);
+  background-color: #fcfcfc;
 
   /* Абсолютне позиціонування модального вікна */
   position: absolute;
@@ -1335,7 +1335,7 @@ button {
   padding-left: 38px;
 
   /* Рамка поля вводу */
-  border: 1px solid var(--grey);
+  border: 1px solid rgb(46 47 66 / 40%);
 
   /* Заокруглення кутів поля вводу */
   border-radius: 4px;
@@ -1444,7 +1444,7 @@ button {
   letter-spacing: 0.04em;
 
   /* Колір тексту текстової області */
-  color: var(--grey);
+  color: rgb(46 47 66 / 40%);
 
   /* Прозорий фон текстової області */
   background-color: transparent;
@@ -1459,7 +1459,7 @@ button {
   padding: 8px 16px;
 
   /* Рамка текстової області */
-  border: 1px solid var(--grey);
+  border: 1px solid rgb(46 47 66 / 40%);
 
   /* Заокруглення кутів текстової області */
   border-radius: 4px;
@@ -1536,7 +1536,7 @@ button {
   height: 16px;
 
   /* Рамка чекбокса */
-  border: 1px solid var(--grey);
+  border: 1px solid rgb(46 47 66 / 40%);
 
   /* Заокруглення кутів чекбокса */
   border-radius: 2px;
