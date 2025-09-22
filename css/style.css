@@ -1014,7 +1014,17 @@ button {
   margin-bottom: 16px;
 }
 
-.email-input-form-input {
+/* !!! Стилі для форми підписки !!! */
+.email-form {
+  /* Розміщуємо елементи форми по горизонталі в рядок */
+  display: flex;
+
+  /* Відступи між елементами форми */
+  gap: 24px;
+}
+
+/* !!! Стилі для поля вводу email !!! */
+.email-input-field {
   /* Основний шрифт проекту */
   font-family: var(--primary-family);
 
@@ -1031,28 +1041,34 @@ button {
   letter-spacing: 0.04em;
 
   /* Колір тексту поля вводу */
-  color: var(--white);
+  color: #fff;
 
   /* Прозорий фон поля вводу */
-  background: transparent;
+  background-color: transparent;
+
+  /* Ширина поля вводу */
+  width: 264px;
+
+  /* Висота поля вводу */
+  height: 40px;
 
   /* Внутрішні відступи поля вводу */
-  padding: 8px 16px;
+  padding-left: 16px;
 
   /* Рамка поля вводу */
-  border: 1px solid var(--white);
+  border: 1px solid #fff;
 
   /* Заокруглення кутів поля вводу */
   border-radius: 4px;
 
   /* Тінь поля вводу */
-  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
 
   /* Прибираємо outline */
   outline: transparent;
 }
 
-.email-input-form-input::placeholder {
+.email-input-field::placeholder {
   /* Основний шрифт проекту */
   font-family: var(--primary-family);
 
@@ -1069,61 +1085,62 @@ button {
   letter-spacing: 0.04em;
 
   /* Колір тексту placeholder */
-  color: var(--white);
+  color: #fff;
 }
 
-.email-input-btn {
-  /* Розмір шрифту кнопки підписки */
+/* !!! Стилі для кнопки підписки !!! */
+.email-submit-btn {
+  /* Сімейство шрифту кнопки */
+  font-family: Roboto, sans-serif;
+
+  /* Розмір шрифту кнопки */
   font-size: 16px;
 
-  /* Товщина шрифту кнопки підписки */
+  /* Жрність шрифту кнопки */
   font-weight: 500;
 
-  /* Міжрядковий інтервал кнопки підписки */
+  /* Простір між рядками кнопки */
   line-height: 1.5;
 
-  /* Відстань між літерами кнопки підписки */
+  /* Відстань між літерами кнопки */
   letter-spacing: 0.04em;
 
-  /* Центрування тексту кнопки підписки */
-  text-align: center;
+  /* Колір тексту в кнопці */
+  color: #fff;
 
-  /* Колір тексту кнопки підписки */
-  color: var(--white);
+  /* Колір фону кнопки */
+  background-color: #4d5ae5;
 
-  /* Фоновий колір кнопки підписки */
-  background: var(--iris);
-
-  /* Розміщуємо іконку в центрі кнопки */
+  /* Розміщення дочірніх елементів */
   display: flex;
 
-  /* Центруємо іконку по горизонталі */
+  /* Вирівнювання контенту по горизонталі */
   justify-content: center;
 
-  /* Центруємо іконку по вертикалі */
+  /* Вирівнювання контенту по вертикалі */
   align-items: center;
 
-  /* Мінімальна ширина кнопки підписки */
+  /* Мінімальна ширина кнопки */
   min-width: 165px;
 
-  /* Внутрішні відступи кнопки підписки */
-  padding: 8px 24px;
+  /* Висота кнопки */
+  height: 40px;
 
-  /* Прибираємо рамку кнопки */
+  /* Стиль курсору */
+  cursor: pointer;
+
+  /* Вимкнення стандартного оформлення кнопки */
   border: none;
 
-  /* Заокруглення кутів кнопки підписки */
+  /* Радіус закруглення кутів елемента */
   border-radius: 4px;
-
-  /* Курсор при наведенні на кнопку */
-  cursor: pointer;
 
   /* Плавний перехід фонового кольору */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-input-btn:hover,
-.email-input-btn:focus {
+.email-submit-btn:hover,
+.email-submit-btn:focus {
   /* Колір тексту кнопки при наведенні */
   color: var(--white);
 
@@ -1134,26 +1151,13 @@ button {
   cursor: pointer;
 }
 
-.email-input-icon {
+/* !!! Стилі для іконки відправки !!! */
+.email-send-icon {
   /* Колір заливки іконки підписки */
   fill: var(--white);
 
   /* Лівий відступ іконки підписки */
   margin-left: 16px;
-}
-
-.input-wrapper {
-  /* Розміщуємо елементи в рядок */
-  display: flex;
-
-  /* Центруємо елементи по горизонталі */
-  justify-content: center;
-
-  /* Центруємо елементи по вертикалі */
-  align-items: center;
-
-  /* Проміжок між елементами */
-  gap: 24px;
 }
 
 /* !!! Стилі для модального вікна !!! */
