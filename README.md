@@ -5,6 +5,9 @@
 [![⭐ Stars](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-05/main/assets/db/likes-badge.json)](https://github.com/VuToV-Mykola/goit-markup-hw-05/actions/workflows/screenshot-and-visitor.yaml)
 [![📦 Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-05/main/assets/db/repo-size.json)](https://github.com/VuToV-Mykola/goit-markup-hw-05)
 [![📄 License](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/VuToV-Mykola/goit-markup-hw-05/main/assets/db/repo-license.json)](https://github.com/VuToV-Mykola/goit-markup-hw-05/blob/main/LICENSE)
+
+## 📸 Скріншот проекту
+![Project Screenshot](./assets/screenshot.png)
 <!-- END:AUTOGEN -->
 
 ## Мої досягнення
